@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Face Mask Detector</title>
+        <style>
+            /* General body styling */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom right, #fff5b7, #ffcc80);
+                color: #333;
+                text-align: center;
+            }
+
+            /* Styling for the header */
+            h1 {
+                font-size: 3rem;
+                color: #ffffff;
+                margin: 20px 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            /* Container for the video feed */
+            div {
+                margin: 20px auto;
+                padding: 20px;
+                width: 60%;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Image styling */
+            img {
+                border: 5px solid #ffffff;
+                border-radius: 10px;
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Face Mask Detector</h1>
+        <div>
+            <img src="{{ url_for('video') }}" alt="Live Video Feed">
+        </div>
+    </body>
+</html>
